@@ -1,0 +1,108 @@
+body {
+  background-color: rgb(60, 57, 57);
+}
+h1 {
+  text-align: center;
+  font-size: 2em;
+  color: rgb(218, 217, 208);
+}
+.date {
+  font-size: 20px;
+  color: rgb(222, 211, 211);
+  text-align: center;
+  margin-top: 50px;
+}
+.nutrition-bar-labels p,
+.nutrition-bar-percentage p {
+  color: #ffffff; /* This is white */
+}
+.nutrition-bar-container {
+  display: flex;
+  padding: 0 20px;
+  flex-direction: column; /* This line makes the items stack vertically */
+  align-items: flex-start; /* Align items to the start of the container */
+  margin-bottom: 10px; /* Space between each bar */
+}
+
+.nutrition-bar-labels {
+  width: 100%; /* Take up the full width of the container */
+  display: flex; /* Enable flex layout */
+  justify-content: space-between; /* Position items on opposite ends */
+}
+
+.nutrition-bar {
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background-color: #fff; /* The unfilled part of the bar */
+}
+
+.nutrition-bar__fill {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.nutrition-bar__fill--Calories {
+  background-color: #f00; /* Red for energy (calories) */
+}
+
+.nutrition-bar__fill--Protein {
+  background-color: #0f0; /* Green for protein */
+}
+
+.nutrition-bar__fill--Carbs {
+  background-color: #00f; /* Blue for net carbs */
+}
+
+.nutrition-bar__fill--Fat {
+  background-color: #ff0; /* Yellow for fat */
+}
+
+
+form {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+input[type="text"] {
+  width: 200px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  font-size: 16px;
+}
+
+button {
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 15px;
+  border: none;
+  color: #fff;
+  background-color: #9faaa0; /* You can change this to any color you like */
+}
+.search-results {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+
+.search-results p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: column; /* This will stack the items vertically */
+  justify-content: center;
+  align-items: center; /* This will center items horizontally */
+}
+
+
+.link-container a {
+  margin: 0 10px;
+}
