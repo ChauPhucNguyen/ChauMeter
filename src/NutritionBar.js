@@ -14,3 +14,5 @@ export const NutritionBar = ({ type, value, max }) => {
     </div>
     );
   };
+
+  

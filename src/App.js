@@ -5,14 +5,14 @@ import {DateComponent} from "./Date";
 import {Nutrition} from "./Nutrition"
 import {SearchFood} from "./SearchFood";
 
-
 function App() {
 
-  const [nutrition, setNutrition] = useState({
-    Calories: 0, // in kcal
-    Protein: 0, // in grams
-    Carbs: 0, // in grams
-    Fat: 0, // in grams
+  const [nutrition, setNutrition] = useState([]);
+  const [totalNutrition, setTotalNutrition] = useState({
+    Calories: 0,
+    Protein: 0,
+    Carbs: 0,
+    Fat: 0,
   });
 
   return (
@@ -27,10 +27,10 @@ function App() {
           <Route path="/" element={
             <>
               <DateComponent/>
-              <Nutrition nutrition={nutrition}/>
+              <Nutrition nutrition={totalNutrition} selectedFoods={nutrition}/>
             </>
           } />
-          <Route path="/search" element={<SearchFood setNutrition={setNutrition}/>} />
+          <Route path="/search" element={<SearchFood setNutrition={setNutrition} setTotalNutrition={setTotalNutrition}/>} />
         </Routes>
       </div>
     </Router>
