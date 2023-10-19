@@ -51,11 +51,12 @@ export const SearchFood = ({ setNutrition, setTotalNutrition }) => {
         />
         <button onClick={SearchFood}>Search</button>
       </div>
-      {results.map((food) => (
-        <div className="food-result" key={food.fdcId} onClick={() => selectFood(food)}>
-          {food.description} - {food.brandOwner ? `Brand: ${food.brandOwner}` : 'Generic'}
-        </div>
-      ))}
+      {results.map((food, index) => (
+  <div className="food-result" key={food.fdcId} onClick={() => selectFood(food)}>
+    {index + 1}. {food.description} - {food.brandOwner ? `Brand: ${food.brandOwner}` : 'Generic'}
+  </div>
+))}
+
     </div>
   );
 };

@@ -9,10 +9,11 @@ export const Nutrition = ({nutrition, selectedFoods}) => {
         <NutritionBar type="Carbs" value={nutrition.Carbs} max={295.1} />
         <NutritionBar type="Fat" value={nutrition.Fat} max={87.4} /> 
         {selectedFoods.map((food, index) => (
-          <div className="selected-food" key={index}>
-            {food.name} - {food.brand ? `Brand: ${food.brand}` : 'Generic'}
-          </div>
-        ))}
+  <div className="selected-food" key={index}>
+    {index + 1}. {food.name} - {food.brand ? `Brand: ${food.brand}` : 'Generic'}
+  </div>
+))}
+
       </div>
     );
   }
