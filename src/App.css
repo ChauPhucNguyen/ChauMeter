@@ -105,4 +105,14 @@ button {
 
 .link-container a {
   margin: 0 10px;
+  color:rgb(218, 217, 208);
+}
+
+.selected-food {
+  padding-left: 20px;
+  color:rgb(218, 217, 208);
+}
+
+.food-result {
+  color: rgb(218, 217, 208);
 }
